@@ -125,7 +125,7 @@ function my_keydown(e)
 			if(car1X <=700)
 			{
 				car1X= car1X + 10;
-				console.log("Quando a seta para a direita é pressionada, x = " + car1X + " | y = " + car1Y)
+				console.log("Quando a seta para a direita é pressionada, x = " + car1X + " | y = " + car1Y);
 				uploadBackground();
 				uploadcar1();
 				uploadcar2();
@@ -169,11 +169,17 @@ function my_keydown(e)
 				if(car2X <=700)
 				{
 					car2X= car2X + 10;
-					console.log("Quando a seta para a direita é pressionada, x = " + car2X + " | y = " + car2Y)
+					console.log("Quando a seta para a direita é pressionada, x = " + car2X + " | y = " + car2Y);
 					uploadBackground();
 					uploadcar1();
 					uploadcar2();
 				}
 			}
-			
+			function my_keydown
+			if(car1X > 700)
+			{
+				console.log("car1");
+				document.getElementById("gameStatus").innerHTML = "Carro 1 Venceu"
+			}
 		}
+	
